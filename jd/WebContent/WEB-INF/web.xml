@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5" 
+	xmlns="http://java.sun.com/xml/ns/javaee" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+	http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+	<servlet>
+	 <servlet-name>login</servlet-name>
+	 <servlet-class>seecen.servlet.LoginServlet</servlet-class>
+	</servlet>
+	<!--配置地址映射-->
+	<servlet-mapping>
+		<servlet-name>login</servlet-name>
+		<!-- 访问路径 -->
+		<url-pattern>/Login</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+	 <servlet-name>Exit</servlet-name>
+	 <servlet-class>seecen.servlet.ExitServlet</servlet-class>
+	</servlet>
+	<!--配置地址映射-->
+	<servlet-mapping>
+		<servlet-name>Exit</servlet-name>
+		<!-- 访问路径 -->
+		<url-pattern>/Exit</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+	 <servlet-name>Add</servlet-name>
+	 <servlet-class>seecen.servlet.AddServlet</servlet-class>
+	</servlet>
+	<!--配置地址映射-->
+	<servlet-mapping>
+		<servlet-name>Add</servlet-name>
+		<!-- 访问路径 -->
+		<url-pattern>/Add</url-pattern>
+	</servlet-mapping>
+	
+		<servlet>
+	 <servlet-name>FindAll</servlet-name>
+	 <servlet-class>seecen.servlet.FindAllServlet</servlet-class>
+	</servlet>
+	<!--配置地址映射-->
+	<servlet-mapping>
+		<servlet-name>FindAll</servlet-name>
+		<!-- 访问路径 -->
+		<url-pattern>/FindAll</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+	 <servlet-name>Del</servlet-name>
+	 <servlet-class>seecen.servlet.DelServlet</servlet-class>
+	</servlet>
+	<!--配置地址映射-->
+	<servlet-mapping>
+		<servlet-name>Del</servlet-name>
+		<!-- 访问路径 -->
+		<url-pattern>/Del</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+	 <servlet-name>Init</servlet-name>
+	 <servlet-class>seecen.servlet.InitServlet</servlet-class>
+	</servlet>
+	<!--配置地址映射-->
+	<servlet-mapping>
+		<servlet-name>Init</servlet-name>
+		<!-- 访问路径 -->
+		<url-pattern>/Init</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+	 <servlet-name>Update</servlet-name>
+	 <servlet-class>seecen.servlet.UpdateServlet</servlet-class>
+	</servlet>
+	<!--配置地址映射-->
+	<servlet-mapping>
+		<servlet-name>Update</servlet-name>
+		<!-- 访问路径 -->
+		<url-pattern>/Update</url-pattern>
+	</servlet-mapping>
+	
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+</web-app>
